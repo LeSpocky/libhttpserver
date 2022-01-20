@@ -79,7 +79,7 @@ class http_request {
      }
 
      /**
-      * Method used to get all pieces of the path requested; considering an url splitted by '/'.
+      * Method used to get all pieces of the path requested; considering an url split by '/'.
       * @return a vector of strings containing all pieces
      **/
      const std::vector<std::string> get_path_pieces() const {
@@ -87,7 +87,7 @@ class http_request {
      }
 
      /**
-      * Method used to obtain a specified piece of the path; considering an url splitted by '/'.
+      * Method used to obtain a specified piece of the path; considering an url split by '/'.
       * @param index the index of the piece selected
       * @return the selected piece in form of string
      **/

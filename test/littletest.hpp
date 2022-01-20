@@ -113,7 +113,7 @@
     try \
     { \
         (__lt_operation__) ;\
-        __lt_ss__ << "(" << __lt_file__ << ":" << __lt_line__ << ") - error in " << "\"" << __lt_name__ << "\": no exceptions thown by " << #__lt_operation__; \
+        __lt_ss__ << "(" << __lt_file__ << ":" << __lt_line__ << ") - error in " << "\"" << __lt_name__ << "\": no exceptions thrown by " << #__lt_operation__; \
         __lt_thrown__ = true; \
     } \
     catch(...) { } \
@@ -128,7 +128,7 @@
     catch(...) \
     { \
         std::stringstream __lt_ss__; \
-        __lt_ss__ << "(" << __lt_file__ << ":" << __lt_line__ << ") - error in " << "\"" << __lt_name__ << "\": exceptions thown by " << #__lt_operation__; \
+        __lt_ss__ << "(" << __lt_file__ << ":" << __lt_line__ << ") - error in " << "\"" << __lt_name__ << "\": exceptions thrown by " << #__lt_operation__; \
         LT_SWITCH_MODE(__lt_mode__) \
     }
 

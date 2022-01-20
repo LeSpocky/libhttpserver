@@ -286,7 +286,7 @@ To test the above example, you can run the following command from a terminal:
     
     curl -XGET -v http://localhost:8080/hello
 
-You'll notice how, on the terminal runing your server, the logs will now be printed in output for each request received.
+You'll notice how, on the terminal running your server, the logs will now be printed in output for each request received.
 
 You can also check this example on [github](https://github.com/etr/libhttpserver/blob/master/examples/custom_access_log.cpp).
 
@@ -422,7 +422,7 @@ To test the above example, you can run the following commands from a terminal:
 You can also check this example on [github](https://github.com/etr/libhttpserver/blob/master/examples/handlers.cpp).
 
 ### Allowing and disallowing methods on a resource
-By default, all methods an a resource are allowed, meaning that an HTTP request with that method will be invoked. It is possible to mark methods as `not allowed` on a resource. When a method not allowed is requested on a resource, the default `method_not_allowed` method is invoked - the default can be overriden as explain in the section [Custom defaulted error messages](custom-defaulted-error-messages).
+By default, all methods an a resource are allowed, meaning that an HTTP request with that method will be invoked. It is possible to mark methods as `not allowed` on a resource. When a method not allowed is requested on a resource, the default `method_not_allowed` method is invoked - the default can be overridden as explain in the section [Custom defaulted error messages](custom-defaulted-error-messages).
 The base `http_resource` class has a set of methods that can be used to allow and disallow HTTP methods.
 * _**void**  http_resource::set_allowing(**const std::string&** method, **bool** allowed):_ Used to allow or disallow a method. The `method` parameter is a string representing an HTTP method (GET, POST, PUT, etc...).
 * _**void**  http_resource::allow_all():_ Marks all HTTP methods as allowed.
@@ -665,7 +665,7 @@ You can explicitly ban or allow an IP address using the following methods on the
 
 ### IP String Format
 The IP string format can represent both IPV4 and IPV6. Addresses will be normalized by the webserver to operate in the same sapce. Any valid IPV4 or IPV6 textual representation works.
-It is also possible to specify ranges of IPs. To do so, omit the octect you want to express as a range and specify a `'*'` in its place.
+It is also possible to specify ranges of IPs. To do so, omit the octet you want to express as a range and specify a `'*'` in its place.
 Examples of valid IPs include:
 * `"192.168.5.5"`: standard IPV4
 * `"192.168.*.*"`: range of IPV4 addresses. In the example, everything between `192.168.0.0` and `192.168.255.255`.

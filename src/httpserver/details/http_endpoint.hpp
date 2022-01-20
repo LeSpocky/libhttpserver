@@ -45,7 +45,7 @@ class http_resource;
 class http_endpoint {
  public:
      /**
-      * Copy constructor. It is useful expecially to copy regex_t structure that contains dinamically allocated data.
+      * Copy constructor. It is useful especially to copy regex_t structure that contains dynamically allocated data.
       * @param h The http_endpoint to copy
      **/
      http_endpoint(const http_endpoint& h);
@@ -64,7 +64,7 @@ class http_endpoint {
 
      /**
       * Operator overload for "assignment operator". It is used to copy endpoints to existing objects.
-      * Is is functional expecially to copy regex_t structure that contains dinamically allocated data.
+      * Is is functional especially to copy regex_t structure that contains dynamically allocated data.
       * @param h The http_endpoint to copy
       * @return a reference to the http_endpoint obtained
      **/
@@ -99,7 +99,7 @@ class http_endpoint {
      }
 
      /**
-      * Method used to get all pieces of an url; considering an url splitted by '/'.
+      * Method used to get all pieces of an url; considering an url split by '/'.
       * @return a vector of strings representing all found pieces.
      **/
      const std::vector<std::string>& get_url_pieces() const {
@@ -165,7 +165,7 @@ class http_endpoint {
      std::vector<std::string> url_pars;
 
      /**
-      * Pieces the url can be splitted into (consider '/' as separator)
+      * Pieces the url can be split into (consider '/' as separator)
      **/
      std::vector<std::string> url_pieces;
 
@@ -180,7 +180,7 @@ class http_endpoint {
      std::regex re_url_normalized;
 
      /**
-      * Boolean indicating wheter the endpoint represents a family
+      * Boolean indicating whether the endpoint represents a family
      **/
      bool family_url;
 
